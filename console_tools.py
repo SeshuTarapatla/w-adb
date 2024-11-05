@@ -1,10 +1,10 @@
 from argparse import RawTextHelpFormatter, ArgumentParser
-
 from ansimarkup import AnsiMarkup
 from rich.console import Console
 
 from os import system
 system('cls')
+
 
 class CustomHelpFormatter(RawTextHelpFormatter):
     def _format_action(self, action):

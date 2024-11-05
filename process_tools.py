@@ -3,6 +3,7 @@ from subprocess import run
 from console_tools import log
 from custom_exceptions import IPAddressNotFoundError, SocketConnectionFailed
 
+
 _exec = lambda cmd: run(cmd, shell=True, capture_output=True)
 _output = lambda cmd: _exec(cmd).stdout.decode()
 
